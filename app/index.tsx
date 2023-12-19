@@ -8,8 +8,8 @@ export default function Page() {
       <Stack.Screen options={{ title: 'Universal Expo Image Components' }} />
       <ScrollView contentContainerStyle={styles.contentContainer}>
         <Text style={styles.description}>
-          expo-image is a new library in beta for rendering AVIF, HEIC, WebP,
-          SVG, (A)PNG, JPEG, and GIFs in your universal app, everywhere.
+          expo-image is a library for rendering AVIF, HEIC, WebP, SVG, (A)PNG,
+          JPEG, and GIFs in your universal app, everywhere.
         </Text>
         <View style={styles.gallery}>
           <View style={styles.row}>
@@ -82,6 +82,30 @@ export default function Page() {
                 style={styles.image}
               />
               <Text style={styles.label}>JPEG</Text>
+            </View>
+          </View>
+          <View style={styles.row}>
+            <View style={styles.item}>
+              <Image
+                source={Platform.select({
+                  web: { uri: '../assets/images/hdr.jpg' },
+                  default: require('../assets/images/hdr.jpg'),
+                })}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>JPEG (HDR)</Text>
+            </View>
+            <View style={styles.item}>
+              <Image
+                source={Platform.select({
+                  web: { uri: '../assets/images/hdr.heic' },
+                  default: require('../assets/images/hdr.heic'),
+                })}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>HEIC (HDR)</Text>
             </View>
           </View>
         </View>
