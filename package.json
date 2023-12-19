@@ -34,9 +34,5 @@
     "eslint-config-universe": "^11.1.1",
     "prettier": "^2.8.3",
     "typescript": "^5.3.0"
-  },
-  "resolutions": {
-    "metro": "0.73.7",
-    "metro-resolver": "0.73.7"
   }
 }
