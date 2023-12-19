@@ -18,6 +18,9 @@
       "**/*"
     ],
     "scheme": "expoimagegallery",
+    "plugins": [
+      "expo-router"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "dev.ide.ExpoImageGallery"
