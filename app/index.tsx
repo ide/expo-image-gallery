@@ -84,30 +84,6 @@ export default function Page() {
               <Text style={styles.label}>JPEG</Text>
             </View>
           </View>
-          <View style={styles.row}>
-            <View style={styles.item}>
-              <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/hdr.jpg' },
-                  default: require('../assets/images/hdr.jpg'),
-                })}
-                contentFit="contain"
-                style={styles.image}
-              />
-              <Text style={styles.label}>JPEG (HDR)</Text>
-            </View>
-            <View style={styles.item}>
-              <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/hdr.heic' },
-                  default: require('../assets/images/hdr.heic'),
-                })}
-                contentFit="contain"
-                style={styles.image}
-              />
-              <Text style={styles.label}>HEIC (HDR)</Text>
-            </View>
-          </View>
         </View>
         <Text style={styles.footnote}>
           Made with Expo, Expo Router, and Expo Image. Runs universally on
