@@ -1,10 +1,11 @@
 import { Image } from 'expo-image';
-import { Stack } from 'expo-router';
+import { Stack, Tabs } from 'expo-router';
 import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function Page() {
   return (
     <>
+      <Tabs.Screen options={{ tabBarLabel: 'Standard' }} />
       <Stack.Screen options={{ title: 'Universal Expo Image Components' }} />
       <ScrollView contentContainerStyle={styles.contentContainer}>
         <Text style={styles.description}>

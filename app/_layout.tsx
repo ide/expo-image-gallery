@@ -1,4 +1,4 @@
-import { Tabs } from 'expo-router/tabs';
+import { Tabs } from 'expo-router';
 
 export default function RootLayout() {
   return (
