@@ -1,6 +1,6 @@
 import { Image } from 'expo-image';
 import { Stack, Tabs } from 'expo-router';
-import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function Page() {
   return (
@@ -11,18 +11,15 @@ export default function Page() {
         <Text style={styles.description}>
           HDR images have a wider range of colors and brightness than the
           standard dynamic range (SDR). Support for HDR is not yet ubiquitous.
-          Web browsers require hacks and libraries like SDWebImage do not
-          support it. If HDR works on this screen, you'll know it when you see
-          it.
+          Libraries like SDWebImage do not support it and support in web
+          browsers is inconsistent. If HDR works on this screen, you'll know it
+          when you see it.
         </Text>
         <View style={styles.gallery}>
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/hdr.avif' },
-                  default: require('../assets/images/hdr.avif'),
-                })}
+                source={require('../assets/images/hdr.avif')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -30,10 +27,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/hdr.heic' },
-                  default: require('../assets/images/hdr.heic'),
-                })}
+                source={require('../assets/images/hdr.heic')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -43,10 +37,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/hdr.png' },
-                  default: require('../assets/images/hdr.png'),
-                })}
+                source={require('../assets/images/hdr.png')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -54,10 +45,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/hdr.jpg' },
-                  default: require('../assets/images/hdr.jpg'),
-                })}
+                source={require('../assets/images/hdr.jpg')}
                 contentFit="contain"
                 style={styles.image}
               />

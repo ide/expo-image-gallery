@@ -1,6 +1,6 @@
 import { Image } from 'expo-image';
 import { Stack, Tabs } from 'expo-router';
-import { Platform, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function Page() {
   return (
@@ -16,10 +16,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/router.avif' },
-                  default: require('../assets/images/router.avif'),
-                })}
+                source={require('../assets/images/router.avif')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -27,10 +24,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/logo-type-b.heic' },
-                  default: require('../assets/images/logo-type-b.heic'),
-                })}
+                source={require('../assets/images/logo-type-b.heic')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -40,10 +34,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/cli.webp' },
-                  default: require('../assets/images/cli.webp'),
-                })}
+                source={require('../assets/images/cli.webp')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -51,10 +42,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/sdk.svg' },
-                  default: require('../assets/images/sdk.svg'),
-                })}
+                source={require('../assets/images/sdk.svg')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -64,10 +52,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/snack.png' },
-                  default: require('../assets/images/snack.png'),
-                })}
+                source={require('../assets/images/snack.png')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -75,10 +60,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={Platform.select({
-                  web: { uri: '../assets/images/client.jpg' },
-                  default: require('../assets/images/client.jpg'),
-                })}
+                source={require('../assets/images/client.jpg')}
                 contentFit="contain"
                 style={styles.image}
               />
