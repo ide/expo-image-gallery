@@ -19,7 +19,18 @@
     ],
     "scheme": "expoimagegallery",
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "newArchEnabled": true
+          },
+          "android": {
+            "newArchEnabled": true
+          }
+        }
+      ]
     ],
     "ios": {
       "supportsTablet": true,
