@@ -3778,10 +3778,10 @@ expo-font@~12.0.4:
   dependencies:
     fontfaceobserver "^2.1.0"
 
-expo-image@~1.12.4:
-  version "1.12.6"
-  resolved "https://registry.yarnpkg.com/expo-image/-/expo-image-1.12.6.tgz#490ff1760ea42ae401b1bc7b0b73df28351b70b4"
-  integrity sha512-wX64hOYMLIZ30kJ+iMo33AMz3qt4oaY9ruwF2LgVsp/VBbLQCqjG9SRlbtpvp6ELFvl5K1Hp0jXJ+MvETVisvg==
+expo-image@~1.12.8:
+  version "1.12.8"
+  resolved "https://registry.yarnpkg.com/expo-image/-/expo-image-1.12.8.tgz#9245ff5bcc18746322869abc1208b7f55dd212a7"
+  integrity sha512-2BXXSubQ57MYq3aE7zYnIQfL7PhrqZB5glyVE7BQYgB/tXrKQ7bDzEk9iawRRZJLfErDQTUACLeaKqjPr4769g==
   dependencies:
     "@react-native/assets-registry" "~0.74.83"
 
