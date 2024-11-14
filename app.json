@@ -16,18 +16,7 @@
   "assetBundlePatterns": ["**/*"],
   "scheme": "expoimagegallery",
   "plugins": [
-    "expo-router",
-    [
-      "expo-build-properties",
-      {
-        "ios": {
-          "newArchEnabled": true
-        },
-        "android": {
-          "newArchEnabled": true
-        }
-      }
-    ]
+    "expo-router"
   ],
   "ios": {
     "supportsTablet": true,
