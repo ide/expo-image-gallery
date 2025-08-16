@@ -1,11 +1,10 @@
 import { Image } from 'expo-image';
-import { Stack, Tabs } from 'expo-router';
+import { Stack } from 'expo-router';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 export default function Page() {
   return (
     <>
-      <Tabs.Screen options={{ tabBarLabel: 'HDR' }} />
       <Stack.Screen options={{ title: 'HDR Images' }} />
       <ScrollView contentContainerStyle={styles.contentContainer}>
         <Text style={styles.description}>

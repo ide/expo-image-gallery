@@ -13,10 +13,13 @@
   "updates": {
     "fallbackToCacheTimeout": 0
   },
-  "assetBundlePatterns": ["**/*"],
+  "assetBundlePatterns": [
+    "**/*"
+  ],
   "scheme": "expoimagegallery",
   "plugins": [
-    "expo-router"
+    "expo-router",
+    "expo-build-properties"
   ],
   "ios": {
     "supportsTablet": true,
@@ -27,6 +30,7 @@
       "foregroundImage": "./assets/adaptive-icon.png",
       "backgroundColor": "#FFFFFF"
     },
+    "edgeToEdgeEnabled": true,
     "package": "dev.ide.expoimagegallery"
   },
   "web": {
