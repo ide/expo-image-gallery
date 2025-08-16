@@ -7,12 +7,12 @@ import {
 export default function RootLayout() {
   return (
     <Tabs>
-      <Tabs.Trigger name="index">
+      <Tabs.Trigger name="standard">
         <Label>Standard</Label>
         <Icon sf="photo.stack" drawable="ic_menu_gallery" />
       </Tabs.Trigger>
       <Tabs.Trigger name="hdr">
-        <Icon sf="sparkles" drawable="ic_menu_manage" />
+        <Icon sf="sparkles" drawable="star_on" />
         <Label>HDR</Label>
       </Tabs.Trigger>
     </Tabs>
