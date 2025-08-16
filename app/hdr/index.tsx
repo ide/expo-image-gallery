@@ -18,7 +18,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/hdr-avif.avif')}
+                source={require('../../assets/images/hdr-avif.avif')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -26,7 +26,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/hdr-heic.heic')}
+                source={require('../../assets/images/hdr-heic.heic')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -36,7 +36,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/hdr-png.png')}
+                source={require('../../assets/images/hdr-png.png')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -44,7 +44,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/hdr-jpeg.jpg')}
+                source={require('../../assets/images/hdr-jpeg.jpg')}
                 contentFit="contain"
                 style={styles.image}
               />

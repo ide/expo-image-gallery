@@ -15,7 +15,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/router.avif')}
+                source={require('../../assets/images/router.avif')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -23,7 +23,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/logo-type-b.heic')}
+                source={require('../../assets/images/logo-type-b.heic')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -33,7 +33,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/cli.webp')}
+                source={require('../../assets/images/cli.webp')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -41,7 +41,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/sdk.svg')}
+                source={require('../../assets/images/sdk.svg')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -51,7 +51,7 @@ export default function Page() {
           <View style={styles.row}>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/snack.png')}
+                source={require('../../assets/images/snack.png')}
                 contentFit="contain"
                 style={styles.image}
               />
@@ -59,7 +59,7 @@ export default function Page() {
             </View>
             <View style={styles.item}>
               <Image
-                source={require('../assets/images/client.jpg')}
+                source={require('../../assets/images/client.jpg')}
                 contentFit="contain"
                 style={styles.image}
               />
