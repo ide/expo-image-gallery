@@ -6,7 +6,10 @@ export default function Page() {
   return (
     <>
       <Stack.Screen options={{ title: 'Universal Expo Image Components' }} />
-      <ScrollView contentContainerStyle={styles.contentContainer}>
+      <ScrollView
+        contentInsetAdjustmentBehavior="always"
+        contentContainerStyle={styles.contentContainer}
+      >
         <Text style={styles.description}>
           expo-image is a library for rendering AVIF, HEIC, WebP, SVG, (A)PNG,
           JPEG, and GIFs in your universal app, everywhere.
