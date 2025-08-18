@@ -6,7 +6,10 @@ export default function Page() {
   return (
     <>
       <Stack.Screen options={{ title: 'HDR Images' }} />
-      <ScrollView contentContainerStyle={styles.contentContainer}>
+      <ScrollView
+        contentInsetAdjustmentBehavior="always"
+        contentContainerStyle={styles.contentContainer}
+      >
         <Text style={styles.description}>
           HDR images have a wider range of colors and brightness than the
           standard dynamic range (SDR). Support for HDR is not yet ubiquitous.
@@ -62,7 +65,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentContainer: {
-    flex: 1,
     alignItems: 'flex-start',
     justifyContent: 'space-between',
     padding: 18,
@@ -72,7 +74,6 @@ const styles = StyleSheet.create({
   },
   gallery: {
     alignSelf: 'stretch',
-    flex: 1,
   },
   row: {
     flexDirection: 'row',

@@ -84,17 +84,16 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentContainer: {
-    flex: 1,
     alignItems: 'flex-start',
-    justifyContent: 'space-between',
     padding: 18,
+    minHeight: '100%',
+    justifyContent: 'space-between',
   },
   description: {
     marginBottom: 20,
   },
   gallery: {
     alignSelf: 'stretch',
-    flex: 1,
   },
   row: {
     flexDirection: 'row',
@@ -113,7 +112,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   footnote: {
-    marginBottom: 20,
-    marginTop: 20,
+    marginTop: 'auto',
+    paddingTop: 20,
   },
 });
