@@ -6,7 +6,7 @@ import {
 
 export default function RootLayout() {
   return (
-    <Tabs>
+    <Tabs minimizeBehavior="onScrollDown">
       <Tabs.Trigger name="standard">
         <Label>Standard</Label>
         <Icon sf="photo.stack" drawable="ic_menu_gallery" />

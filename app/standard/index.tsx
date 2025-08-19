@@ -70,6 +70,118 @@ export default function Page() {
             </View>
           </View>
         </View>
+        <View style={styles.gallery}>
+          <View style={styles.row}>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/router.avif')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>AVIF</Text>
+            </View>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/logo-type-b.heic')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>HEIC</Text>
+            </View>
+          </View>
+          <View style={styles.row}>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/cli.webp')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>WebP</Text>
+            </View>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/sdk.svg')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>SVG</Text>
+            </View>
+          </View>
+          <View style={styles.row}>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/snack.png')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>PNG</Text>
+            </View>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/client.jpg')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>JPEG</Text>
+            </View>
+          </View>
+        </View>
+        <View style={styles.gallery}>
+          <View style={styles.row}>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/router.avif')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>AVIF</Text>
+            </View>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/logo-type-b.heic')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>HEIC</Text>
+            </View>
+          </View>
+          <View style={styles.row}>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/cli.webp')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>WebP</Text>
+            </View>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/sdk.svg')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>SVG</Text>
+            </View>
+          </View>
+          <View style={styles.row}>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/snack.png')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>PNG</Text>
+            </View>
+            <View style={styles.item}>
+              <Image
+                source={require('../../assets/images/client.jpg')}
+                contentFit="contain"
+                style={styles.image}
+              />
+              <Text style={styles.label}>JPEG</Text>
+            </View>
+          </View>
+        </View>
         <Text style={styles.footnote}>
           Made with Expo, Expo Router, and Expo Image. Runs universally on
           Android, iOS, and the web.
@@ -86,7 +198,6 @@ const styles = StyleSheet.create({
   contentContainer: {
     alignItems: 'flex-start',
     padding: 18,
-    minHeight: '100%',
     justifyContent: 'space-between',
   },
   description: {
